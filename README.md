@@ -2,6 +2,12 @@
 
 A demo to run free5gc on vagrant
 
+## Quick start
+
+```
+bash main.sh
+```
+
 ## Requirements
 
 - ubuntu 20.04

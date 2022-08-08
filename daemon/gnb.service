@@ -1,0 +1,11 @@
+[Unit]
+Description=free5gc gnb
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/vagrant/UERANSIM
+ExecStart=/home/vagrant/UERANSIM/build/nr-gnb -c /home/vagrant/UERANSIM/config/free5gc-gnb.yaml
+
+[Install]
+WantedBy=multi-user.target

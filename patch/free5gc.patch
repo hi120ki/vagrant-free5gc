@@ -1,0 +1,39 @@
+diff --git a/config/amfcfg.yaml b/config/amfcfg.yaml
+index cf64598..5790cc1 100644
+--- a/config/amfcfg.yaml
++++ b/config/amfcfg.yaml
+@@ -5,7 +5,7 @@ info:
+ configuration:
+   amfName: AMF # the name of this AMF
+   ngapIpList:  # the IP list of N2 interfaces on this AMF
+-    - 127.0.0.18
++    - 192.168.56.101
+   sbi: # Service-based interface information
+     scheme: http # the protocol for sbi (http or https)
+     registerIPv4: 127.0.0.18 # IP used to register to NRF
+diff --git a/config/smfcfg.yaml b/config/smfcfg.yaml
+index 14e0a5d..8aeac9c 100644
+--- a/config/smfcfg.yaml
++++ b/config/smfcfg.yaml
+@@ -62,7 +62,7 @@ configuration:
+         interfaces: # Interface list for this UPF
+           - interfaceType: N3 # the type of the interface (N3 or N9)
+             endpoints: # the IP address of this N3/N9 interface on this UPF
+-              - 127.0.0.8
++              - 192.168.56.101
+             networkInstance: internet # Data Network Name (DNN)
+     links: # the topology graph of userplane, A and B represent the two nodes of each link
+       - A: gNB1
+diff --git a/config/upfcfg.yaml b/config/upfcfg.yaml
+index 938f2df..3578d8b 100644
+--- a/config/upfcfg.yaml
++++ b/config/upfcfg.yaml
+@@ -13,7 +13,7 @@ gtpu:
+   # The IP list of the N3/N9 interfaces on this UPF
+   # If there are multiple connection, set addr to 0.0.0.0 or list all the addresses
+   ifList:
+-    - addr: 127.0.0.8
++    - addr: 192.168.56.101
+       type: N3
+       # name: upf.5gc.nctu.me
+       # ifname: gtpif

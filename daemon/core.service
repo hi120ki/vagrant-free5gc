@@ -1,0 +1,11 @@
+[Unit]
+Description=free5gc core
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/vagrant/free5gc
+ExecStart=bash /vagrant/daemon/core-run.sh
+
+[Install]
+WantedBy=multi-user.target

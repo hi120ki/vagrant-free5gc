@@ -1,0 +1,11 @@
+[Unit]
+Description=free5gc web console
+After=network.target mongodb.service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/vagrant/free5gc/webconsole
+ExecStart=/home/vagrant/free5gc/webconsole/bin/webconsole
+
+[Install]
+WantedBy=multi-user.target

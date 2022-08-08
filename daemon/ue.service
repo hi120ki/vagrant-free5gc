@@ -1,0 +1,11 @@
+[Unit]
+Description=free5gc ue
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/vagrant/UERANSIM
+ExecStart=/home/vagrant/UERANSIM/build/nr-ue -c /home/vagrant/UERANSIM/config/free5gc-ue.yaml
+
+[Install]
+WantedBy=multi-user.target

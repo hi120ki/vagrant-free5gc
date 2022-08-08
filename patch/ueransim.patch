@@ -1,0 +1,33 @@
+diff --git a/config/free5gc-gnb.yaml b/config/free5gc-gnb.yaml
+index 81bb13b..8de78b2 100644
+--- a/config/free5gc-gnb.yaml
++++ b/config/free5gc-gnb.yaml
+@@ -6,12 +6,12 @@ idLength: 32        # NR gNB ID length in bits [22...32]
+ tac: 1              # Tracking Area Code
+ 
+ linkIp: 127.0.0.1   # gNB's local IP address for Radio Link Simulation (Usually same with local IP)
+-ngapIp: 127.0.0.1   # gNB's local IP address for N2 Interface (Usually same with local IP)
+-gtpIp: 127.0.0.1    # gNB's local IP address for N3 Interface (Usually same with local IP)
++ngapIp: 192.168.56.102   # gNB's local IP address for N2 Interface (Usually same with local IP)
++gtpIp: 192.168.56.102    # gNB's local IP address for N3 Interface (Usually same with local IP)
+ 
+ # List of AMF address information
+ amfConfigs:
+-  - address: 127.0.0.1
++  - address: 192.168.56.101
+     port: 38412
+ 
+ # List of supported S-NSSAIs by this gNB
+diff --git a/config/free5gc-ue.yaml b/config/free5gc-ue.yaml
+index 9089ba0..f22a30e 100644
+--- a/config/free5gc-ue.yaml
++++ b/config/free5gc-ue.yaml
+@@ -10,7 +10,7 @@ key: '8baf473f2f8fd09487cccbd7097c6862'
+ # Operator code (OP or OPC) of the UE
+ op: '8e27b6af0e692e750f32667a3b14605d'
+ # This value specifies the OP type and it can be either 'OP' or 'OPC'
+-opType: 'OPC'
++opType: 'OP'
+ # Authentication Management Field (AMF) value
+ amf: '8000'
+ # IMEI number of the device. It is used if no SUPI is provided
