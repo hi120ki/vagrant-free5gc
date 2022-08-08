@@ -1,0 +1,15 @@
+name: run
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: macos-10.15
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run main.sh
+        run: bash main.sh
