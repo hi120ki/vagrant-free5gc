@@ -61,7 +61,7 @@ cd ~/free5gc ; make
 cd ~/free5gc ; make webconsole
 
 # Build and install gtp5g
-git clone -b v0.7.1 https://github.com/free5gc/gtp5g.git ~/gtp5g
+git clone -b v0.8.1 https://github.com/free5gc/gtp5g.git ~/gtp5g
 cd ~/gtp5g ; make ; sudo make install
 
 # Add systemd daemon
