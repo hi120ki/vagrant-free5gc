@@ -56,7 +56,7 @@ sudo apt-get update
 sudo apt-get install -y nodejs yarn
 
 # Build free5gc
-git clone --recursive -b v3.3.0 -j `nproc` https://github.com/free5gc/free5gc.git ~/free5gc
+git clone --recursive -b v3.2.1 -j `nproc` https://github.com/free5gc/free5gc.git ~/free5gc
 cd ~/free5gc ; make
 cd ~/free5gc ; make webconsole
 
